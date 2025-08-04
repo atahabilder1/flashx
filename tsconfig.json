@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "commonjs",
+    "lib": ["ES2022"],
+    "declaration": true,
+    "outDir": "./dist",
+    "rootDir": "./",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": false,
+    "typeRoots": ["node_modules/@types", "./typechain-types"]
+  },
+  "include": [
+    "./scripts/**/*",
+    "./test/**/*",
+    "./typechain-types/**/*",
+    "./hardhat.config.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "cache",
+    "artifacts",
+    "frontend"
+  ],
+  "files": ["./hardhat.config.ts"],
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  }
+}
