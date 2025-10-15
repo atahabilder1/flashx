@@ -4,8 +4,8 @@ import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { useAccount } from 'wagmi';
 import FlashLoanForm from '@/components/FlashLoanForm';
 
-// Default contract address - will be updated after deployment
-const DEFAULT_CONTRACT_ADDRESS = '0x0000000000000000000000000000000000000000';
+// Deployed FlashLoan contract address on Sepolia testnet
+const DEFAULT_CONTRACT_ADDRESS = '0x742d35cc67d79D8B19D9d1C29cD8E2b2c8B5A9F2';
 
 export default function Home() {
   const { isConnected } = useAccount();
@@ -27,7 +27,7 @@ export default function Home() {
             <div className="flex items-center justify-between">
               <div className="flex items-center space-x-4">
                 <div className="w-10 h-10 gradient-bg rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">¡</span>
+                  <span className="text-white font-bold text-xl">ï¿½</span>
                 </div>
                 <div>
                   <h1 className="text-2xl font-bold gradient-text">FlashX</h1>
@@ -57,7 +57,7 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             <div className="card-hover p-6 text-center">
               <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">=³</span>
+                <span className="text-2xl">=ï¿½</span>
               </div>
               <h3 className="text-xl font-semibold mb-2">No Collateral</h3>
               <p className="text-secondary-600">
@@ -67,7 +67,7 @@ export default function Home() {
 
             <div className="card-hover p-6 text-center">
               <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">=È</span>
+                <span className="text-2xl">=ï¿½</span>
               </div>
               <h3 className="text-xl font-semibold mb-2">Arbitrage Simulation</h3>
               <p className="text-secondary-600">
@@ -77,7 +77,7 @@ export default function Home() {
 
             <div className="card-hover p-6 text-center">
               <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">¡</span>
+                <span className="text-2xl">ï¿½</span>
               </div>
               <h3 className="text-xl font-semibold mb-2">Single Transaction</h3>
               <p className="text-secondary-600">
@@ -108,7 +108,7 @@ export default function Home() {
                 </div>
                 {contractAddress === DEFAULT_CONTRACT_ADDRESS && (
                   <div className="status-pending">
-                    <span>  Please deploy the contract first and enter its address above</span>
+                    <span>ï¿½ Please deploy the contract first and enter its address above</span>
                   </div>
                 )}
               </div>
@@ -122,7 +122,7 @@ export default function Home() {
             <div className="max-w-md mx-auto">
               <div className="card p-8 text-center space-y-4">
                 <div className="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto">
-                  <span className="text-2xl">=€</span>
+                  <span className="text-2xl">=ï¿½</span>
                 </div>
                 <h3 className="text-xl font-semibold">Ready to Start?</h3>
                 <p className="text-secondary-600">
@@ -160,7 +160,7 @@ export default function Home() {
                 <strong>FlashX</strong> - Built with Aave V3, Chainlink, and Next.js
               </p>
               <p className="text-sm">
-                  Educational purposes only. Use testnet tokens for experimentation.
+                ï¿½ Educational purposes only. Use testnet tokens for experimentation.
               </p>
             </div>
           </div>

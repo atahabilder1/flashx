@@ -49,3 +49,7 @@ frontend/.next/
 frontend/out/
 frontend/dist/
 frontend/build/
+
+# Claude Code settings (local only)
+.claude/
+CLAUDE.md
